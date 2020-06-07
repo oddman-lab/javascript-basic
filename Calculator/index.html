@@ -6,40 +6,41 @@
   <script src="https://kit.fontawesome.com/87a4289024.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
   <title>Document</title>
 </head>
 <body>
 <div class="calc">
   <div class="calc__display">
-    <span class="calc__name">odd-calculator 3000</span>
-    <div class="previouse-input"></div>
-    <div class="current-input"></div>
+    <!-- <span class="calc__name">odd-calculator 3000</span> -->
+    <div data-previouse-input class="previouse-input"></div>
+    <div data-current-input class="current-input"></div>
   </div>
   <div class="calc__body">
     <button class="disp-btn">
       <i class="fas fa-angle-up" aria-hidden="true"></i>
     </button>
     <div class="body__main">
-      <button class="operation-char clear">C</button>
-      <button class="operation-char">%</button>
-      <button class="operation-char">X</button>
-      <button class="operation-char"><i class="fas fa-backspace"></i></button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button class="operation-char">/</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button class="operation-char">-</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button class="operation-char">+</button>
+      <button data-allclear class="operation-char clear">C</button>
+      <button data-operand class="operation-char">%</button>
+      <button data-operand value="*" class="operation-char">*</button>
+      <button data-delete class="operation-char"><i class="fas fa-backspace"></i></button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operand class="operation-char">÷</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operand class="operation-char">-</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operand class="operation-char">+</button>
       <button>+/-</button>
-      <button>0</button>
-      <button>.</button>
-      <button class="operation-char equal">=</button>
+      <button data-number>0</button>
+      <button data-number>.</button>
+      <button data-equal class="operation-char equal">=</button>
     </div>
 
     <div class="body__extended visually-hidden">
@@ -47,7 +48,5 @@
     </div>
   </div>
 </div>
-
-<script src="app.js"></script>
 </body>
 </html>
