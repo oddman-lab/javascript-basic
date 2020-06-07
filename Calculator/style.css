@@ -7,31 +7,42 @@ body {
     flex-direction: column;
 }
 .calc__display {
-    background-color: #3F6054;
-    box-shadow: -2px 1px 2px rgba(0,0,0,0.15), 
-               2px 1px 2px rgba(0,0,0,0.15);
-    border-radius: 10px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    width: 410px;
-    height: 150px;
-    transform: translateY(110px);
-    transition: transform 0.25s ease;
-    z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: #3F6054;
+  box-shadow: -2px 1px 2px rgba(0,0,0,0.15), 
+                2px 1px 2px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 410px;
+  height: 150px;
+  transform: translateY(110px);
+  transition: transform 0.25s ease;
+  z-index: -1;
 }
     .show-display {
       cursor: pointer;
       transform: translateY(10px);
     }
 .calc__name {
+  align-self: flex-start;
   color: #d4d4d4;
   padding: 5px;
   font-size: 12px;
   font-style: italic;
 }
 .previouse-input {
+  color: #ffffff;
+  opacity: 0.6;
+  font-size: 24px;
 }
 .current-input {
+  color: #ffffff;
+  font-size: 48px;
+  padding-bottom: 40px;
 }
 .calc__body {
   background-color: #253e35;
