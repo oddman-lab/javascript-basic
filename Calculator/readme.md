@@ -11,7 +11,7 @@ HTML5/CSS3/JS *(ES6)*
 
 И вот какое решение было применено в моем подходе:
 1. Как базис использовал класс, пришедший в JS в ES6 с описанными внутри методами для разных задач
-```jΩavascript
+```javascript
 class Calculator {
   constructor(previouseInput, currentInput) {
     this.previouseInput = previouseInput;
