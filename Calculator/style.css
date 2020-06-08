@@ -38,11 +38,15 @@ body {
   color: #ffffff;
   opacity: 0.6;
   font-size: 24px;
+  text-align: right;
+  word-break: break-word;
 }
 .current-input {
   color: #ffffff;
   font-size: 48px;
   padding-bottom: 40px;
+  text-align: right;
+  word-break: break-word;
 }
 .calc__body {
   background-color: #253e35;
@@ -102,6 +106,36 @@ body {
     opacity: 0.5;
   }
 .body__extended {
+  width: 220px;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #0A2B1F;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 20px;
+  position: relative;
+  bottom: 80%;
+  left: 50%;
+  transition: all 0.25s ease-in-out;
+  transform: translateX(0px);
+  opacity: 1;
+  z-index: -1;
 }
-.visually-hidden {
+
+.body__extended_show {
+  transform: translateX(210px);
+  transition: all 0.25s ease-in;
+  opacity: 1;
+}
+.wrap > button.operation-char {
+  background: none;
+  border: none;
+  outline: crimson;
+  
+}
+.wrap > button.operation-char:hover {
+  color: red;
+}
+.fa-hard-hat_engiOn {
+  color: coral;
 }
