@@ -1,5 +1,5 @@
 # Не eval() калькулятор на JavaScript
-![calc2.gif](1)
+![Gif презентация] (https://github.com/oddman-lab/javascript-basic/blob/master/Calculator/calc2.gif)
 Привет! Это мой первый более-менее серьезный проект на Github с использованием чистого JavaScript.
 ### Задача: 
 Сделать не *eval()* калькулятор на JavaScript.
