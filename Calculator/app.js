@@ -62,7 +62,6 @@ class Calculator {
     let computing
     const current = parseFloat(this.currentInput)
     const prev = parseFloat(this.previouseInput)
-
     if (isNaN(current) || isNaN(prev)) return
 
     switch (this.operation) {
@@ -97,7 +96,7 @@ const deleteButton = document.querySelector('[data-delete]');
 const equalButton = document.querySelector('[data-equal]');
 const clearButton = document.querySelector('[data-allclear]');
 const previouseInput = document.querySelector('[data-previouse-input]');
-let currentInput = document.querySelector('[data-current-input]');
+const currentInput = document.querySelector('[data-current-input]');
 
 const calculator = new Calculator(previouseInput, currentInput)
 
@@ -150,5 +149,3 @@ calcTypeButton.addEventListener('click', () => {
   extendedButton.classList.toggle('fa-hard-hat_engiOn')
   extendedCalc.classList.toggle('body__extended_show')
 })
-
-const degree = document.querySelector('[data-degree]')
