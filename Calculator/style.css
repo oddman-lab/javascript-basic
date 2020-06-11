@@ -126,6 +126,7 @@ body {
   transform: translateX(210px);
   transition: all 0.25s ease-in;
   opacity: 1;
+  
 }
 .wrap > button.operation-char {
   background: none;
